@@ -14,6 +14,19 @@ h6 {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 ul {
   margin: 0;
   padding-left: 0;
@@ -383,6 +396,7 @@ body {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-link {
   font-family: Raleway, sans-serif;
@@ -424,7 +438,7 @@ body {
 .footer-wrap {
   display: inline-block;
 }
-.footer-social {
+.footer-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -460,6 +474,60 @@ body {
   fill: #f4f4fd;
 }
 
+.footer-sub-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2e2f42;
+  margin-right: 24px;
+}
+
+.subscribe-input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.footer-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-subscribe {
+  display: flex;
+  display: block;
+  margin-left: 80px;
+}
+
+.subscribe-wrap {
+  display: flex;
+}
 /* -------------------PORTFOLIO PAGE------------------- */
 .gallery {
   padding-bottom: 120px;
@@ -655,6 +723,8 @@ body {
   fill: #4d5ae5;
 }
 .modal-button {
+  display: block;
+  margin: 0 auto;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -666,6 +736,7 @@ body {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .input-text {
@@ -705,4 +776,33 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.policy-text {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.policy-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.policy-input:checked + .policy-text span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.policy-link {
+  margin-left: 2px;
 }
