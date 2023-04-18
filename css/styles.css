@@ -487,6 +487,14 @@ body {
   border-radius: 4px;
   background-color: #2e2f42;
   margin-right: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .subscribe-input::placeholder {
@@ -517,6 +525,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .footer-subscribe {
@@ -658,7 +675,7 @@ body {
   min-height: 576px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -682,10 +699,20 @@ body {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
 }
 
 .modal-close-btn {
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: #ffffff;
 }
 
 .is-hidden {
@@ -737,6 +764,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #404bbf;
 }
 
 .input-text {
@@ -753,7 +786,7 @@ body {
 
 .modal-icon {
   position: absolute;
-  left: 8px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
