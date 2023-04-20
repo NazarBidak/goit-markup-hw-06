@@ -495,6 +495,7 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+  padding: 8px 16px;
 }
 
 .subscribe-input::placeholder {
@@ -539,7 +540,7 @@ body {
 .footer-subscribe {
   display: flex;
   display: block;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .subscribe-wrap {
@@ -788,7 +789,7 @@ body {
   position: absolute;
   left: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-65%);
 }
 
 .input-wrap {
@@ -802,6 +803,8 @@ body {
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .modal-textarea::placeholder {
@@ -814,8 +817,12 @@ body {
 .policy-text {
   font-size: 12px;
   display: flex;
-  align-items: center;
   margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .policy-text span {
